@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../../../core/utilis/shared_widgets/text_widget.dart';
 import '../../screens/splash_screen2.dart';
 
-class ButtonWidget extends StatelessWidget {
-  const ButtonWidget({super.key});
+class SplashButtonWidget extends StatelessWidget {
+  const SplashButtonWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class ButtonWidget extends StatelessWidget {
             ),
           ),
 
-          height: 62,
+          height: 63,
           width: 278,
 
         ),

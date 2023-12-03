@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../core/utilis/shared_widgets/background_for_splash_screen.dart';
 import '../../../../create_account_screen/presentation/views/widgets/button_widget.dart';
+import '../widgets/splashScreen1Widgets/button_widget.dart';
 import '../widgets/splashScreen1Widgets/texts_widget.dart';
 
 class SplashScreen1 extends StatelessWidget {
@@ -20,7 +21,7 @@ class SplashScreen1 extends StatelessWidget {
                   children: [
                     TextsWidget(),
                     Spacer(),
-                    ButtonWidget(),
+                    SplashButtonWidget(),
                   ],
                 ),
               ),

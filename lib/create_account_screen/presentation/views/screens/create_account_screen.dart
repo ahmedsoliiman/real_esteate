@@ -32,7 +32,7 @@ class CreateAccountScreen extends StatelessWidget {
                 SizedBox(
                   height: 53,
                 ),
-                ButtonWidget(),
+                SplashButtonWidget(),
                 SizedBox(
                   height: 19,
                 ),

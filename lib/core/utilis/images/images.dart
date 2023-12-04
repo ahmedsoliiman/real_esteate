@@ -7,6 +7,16 @@ class Images
   static const String backButton = 'assets/images/back_button.png';
   static const String splashBackG ='assets/images/splashBackGround.jpg';
   static const String mainBackG ='assets/images/mainBackG.jpg';
+  static const String profileImage ='assets/images/profile_image.png';
+  static const String homeImage ='assets/images/home_image.png';
+  static const String hotelImage ='assets/images/hotel_image.png';
+  static const String appartmentImage ='assets/images/appartment_image.png';
+  static const String firstImage ='assets/images/firstImage.png';
+
+
+
+
+
 
 
 

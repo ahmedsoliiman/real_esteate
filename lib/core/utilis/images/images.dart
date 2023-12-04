@@ -6,6 +6,8 @@ class Images
   static const String backGroundSplash = 'assets/images/splash_back_G.png';
   static const String backButton = 'assets/images/back_button.png';
   static const String splashBackG ='assets/images/splashBackGround.jpg';
+  static const String mainBackG ='assets/images/mainBackG.jpg';
+
 
 
 

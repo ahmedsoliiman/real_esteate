@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:sr_company_project/create_account_screen/presentation/views/widgets/title.dart';
-
-import '../../../../splash_screen/presentation/views/widgets/splashScreen1Widgets/button_widget.dart';
-import '../widgets/row_for_mini_containers.dart';
+import '../../../../core/utilis/shared_widgets/mini_conainers_widget.dart';
+import '../../../../core/utilis/shared_widgets/text_for_register_and_login.dart';
+import '../../../../core/utilis/shared_widgets/title_for_register_and_login.dart';
+import '../widgets/button_widget.dart';
 import '../widgets/textFormField_widgets.dart';
 import '../widgets/text_under_button.dart';
-import '../widgets/text_under_title.dart';
 
 
 class CreateAccountScreen extends StatelessWidget {
@@ -15,16 +14,16 @@ class CreateAccountScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Color.fromRGBO(255, 255, 255, 1.0),
         body: Padding(
-          padding: const EdgeInsets.only(left:31.0 , right:31.0 , bottom:10.0,),
-          child: SingleChildScrollView(
+          padding: const EdgeInsets.only(left:31.0 , right:31.0 , bottom:10.0,top: 90),
+          child:               SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                TitleOfScreen(),
+                TitleForRegisterAndLogin(text: 'Create Account',),
                 SizedBox(
                   height: 6.0,
                 ),
-                TextUnderTitle(),
+                TextForRegisterAndLoginScreen(text1: 'Create an account so you can explore all', text2: 'the existing jobs', fontSize: 14.0,),
                 SizedBox(
                   height: 30,
                 ),
@@ -32,7 +31,7 @@ class CreateAccountScreen extends StatelessWidget {
                 SizedBox(
                   height: 53,
                 ),
-                SplashButtonWidget(),
+                ButtonWidgetForRegister(),
                 SizedBox(
                   height: 19,
                 ),
@@ -40,7 +39,7 @@ class CreateAccountScreen extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                RowForMiniContainers(),
+                MiniContainersWidget(),
               ],
             ),
           ),

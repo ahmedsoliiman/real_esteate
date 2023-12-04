@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:sr_company_project/splash_screen/presentation/views/screens/splash_screen1.dart';
 
+import 'create_account_screen/presentation/views/screens/create_account_screen.dart';
+import 'login_screen/presentation/views/screens/login_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -17,7 +20,7 @@ class MyApp extends StatelessWidget {
       //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       //   useMaterial3: true,
       // ),
-      home: SplashScreen1(),
+      home: LoginScreen(),
     );
   }
 }

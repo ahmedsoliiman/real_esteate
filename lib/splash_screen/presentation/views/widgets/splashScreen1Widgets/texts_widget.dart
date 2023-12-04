@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../../../core/utilis/shared_widgets/text_widget.dart';
 
 class TextsWidget extends StatelessWidget {

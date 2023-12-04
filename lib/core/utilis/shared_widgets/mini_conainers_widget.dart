@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/utilis/images/images.dart';
 import 'icon_in_container_widget.dart';
+import '../images/images.dart';
 
-class RowForMiniContainers extends StatelessWidget {
-  const RowForMiniContainers({super.key});
+class MiniContainersWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +24,5 @@ class RowForMiniContainers extends StatelessWidget {
         ],
       ),
     );
-
   }
 }

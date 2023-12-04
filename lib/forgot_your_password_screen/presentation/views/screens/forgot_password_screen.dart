@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:sr_company_project/core/utilis/shared_widgets/button_widget.dart';
-import 'package:sr_company_project/core/utilis/shared_widgets/text_widget.dart';
+import '../../../../core/utilis/shared_widgets/button_widget.dart';
 import '../../../../core/utilis/shared_widgets/mini_conainers_widget.dart';
 import '../../../../core/utilis/shared_widgets/text_for_register_and_login.dart';
+import '../../../../core/utilis/shared_widgets/text_widget.dart';
 import '../../../../core/utilis/shared_widgets/textformfield_widget.dart';
 import '../../../../core/utilis/shared_widgets/title_for_register_and_login.dart';
-import '../../../../forgot_your_password_screen/presentation/views/screens/forgot_password_screen.dart';
+import '../../../../otp_verification_for_login_screen/presentation/views/screens/otp_verification_for_login_screen.dart';
 
-class LoginScreen extends StatelessWidget {
+class ForgotPasswordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -21,21 +21,22 @@ class LoginScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 TitleForRegisterAndLogin(
-                  text: 'Login',
+                  text: 'Forgot Password ?',
                 ),
                 SizedBox(
                   height: 31.0,
                 ),
                 TextForRegisterAndLoginScreen(
-                  text1: 'Welcome back you’ve',
-                  text2: 'been missed!',
-                  fontSize: 18,
+                  text1: 'Don\'t worry! It occurs. Please enter the email address linked with your ',
+                  text2: 'account or phone number.',
+                  fontSize: 16,
+                  color: Color.fromRGBO(131, 145, 161, 1.0),
                 ),
                 SizedBox(
-                  height: 69.0,
+                  height: 23.0,
                 ),
                 TextFormFieldWidget(
-                  text: 'Email',
+                  text: 'Enter your email',
                   textInputAction: TextInputAction.next,
                   textInputType: TextInputType.emailAddress,
                   obscureText: false,
@@ -44,46 +45,25 @@ class LoginScreen extends StatelessWidget {
                   height: 29.0,
                 ),
                 TextFormFieldWidget(
-                  text: 'Password',
+                  text: 'Enter your phone number',
                   textInputAction: TextInputAction.done,
-                  textInputType: TextInputType.text,
-                  obscureText: true,
+                  textInputType: TextInputType.phone,
+                  obscureText: false,
                 ),
                 SizedBox(
-                  height: 15.0,
+                  height: 53.0,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    TextButton(
-                        onPressed: ()
-                        {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => ForgotPasswordScreen()),
-                          );
-                        },
-                        child: TextWidget(
-                            text: 'Forgot your password?',
-                            textStyle: TextStyle(
-                              fontSize: 14.0,
-                              color: Color.fromRGBO(31, 65, 187, 1.0),
-                            ))),
-                  ],
-                ),
-                SizedBox(
-                  height: 30.0,
-                ),
-                ButtonWidget(text: 'Sign in'),
+                InkWell(
+                    onTap: ()
+                    {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => OtpVerificationForLoginScreen()),
+                      );
+                    },
+                    child: ButtonWidget(text: 'Send Code')),
                 SizedBox(
                   height: 40.0,
-                ),
-                TextWidget(text: 'Create new account', textStyle: TextStyle(
-                  fontSize: 14.0,
-                  color: Color.fromRGBO(73, 73, 73, 1.0),
-                )),
-                SizedBox(
-                  height: 65.0,
                 ),
                 TextWidget(text: 'Or continue with', textStyle: TextStyle(
                   fontSize: 14.0,

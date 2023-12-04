@@ -36,7 +36,6 @@ class SplashButtonWidget extends StatelessWidget {
         InkWell(
           onTap: ()
           {
-
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => SplashScreen2()),
@@ -58,15 +57,10 @@ class SplashButtonWidget extends StatelessWidget {
                 width: 5.0,
               ),
             ),
-
             height: 60,
             width: 276,
-
           ),
         ),
-
-
-
       ],
     );
 

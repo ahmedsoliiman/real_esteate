@@ -12,6 +12,15 @@ class Images
   static const String hotelImage ='assets/images/hotel_image.png';
   static const String appartmentImage ='assets/images/appartment_image.png';
   static const String firstImage ='assets/images/firstImage.png';
+  static const String houseImage ='assets/images/house.jpg';
+  static const String bedImage ='assets/images/bed.png';
+  static const String bathImage ='assets/images/bath.png';
+  static const String carImage ='assets/images/car.png';
+  static const String starImage ='assets/images/star.png';
+
+
+
+
 
 
 

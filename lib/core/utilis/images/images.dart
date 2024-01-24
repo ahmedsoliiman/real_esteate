@@ -17,6 +17,14 @@ class Images
   static const String bathImage ='assets/images/bath.png';
   static const String carImage ='assets/images/car.png';
   static const String starImage ='assets/images/star.png';
+  static const String locationImage ='assets/images/locationImg.png';
+  static const String dropdownImage ='assets/images/dropdownimag.png';
+  static const String bellImage ='assets/images/bellImage.png';
+  static const String searchImage ='assets/images/searchImage.png';
+  static const String filterImage ='assets/images/filterImage.png';
+
+
+
 
 
 

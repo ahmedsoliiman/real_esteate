@@ -1,6 +1,9 @@
+
 import 'package:flutter/material.dart';
 import 'package:sr_company_project/core/utilis/images/images.dart';
 import 'package:sr_company_project/core/utilis/shared_widgets/text_widget.dart';
+import 'package:sr_company_project/home_screen/presentation/views/widgets/container_in_body_widget.dart';
+import 'package:sr_company_project/home_screen/presentation/views/widgets/container_in_scroll_widget.dart';
 
 class HomeScreen extends StatelessWidget {
 
@@ -92,33 +95,71 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           body: Padding(
-            padding: const EdgeInsets.only(top: 25.0 , left: 20.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                TextWidget(text: 'Nearby for you', textStyle: TextStyle(
-                  fontSize: 15.0,
-                )),
-              Container(
-                color: Colors.yellow,
-                height: 200.0,
-                width: 200.0,
-                child: ListView.builder(
-                  itemCount: 5,
-                    scrollDirection: Axis.horizontal,
-                    itemBuilder: (BuildContext context , int index)
-                    {
-                      return Container(
-                        height: 150.0,
-                        width: 150.0,
-                        color: Colors.red,
-                      );
-                    }
+            padding: const EdgeInsets.only( left: 20.0 ),
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.only(top: 25.0),
+                    child: TextWidget(text: 'Nearby for you', textStyle: TextStyle(
+                      fontSize: 15.0,
+                    )),
+                  ),
+                  SizedBox(
+                  height: 15.0,
                 ),
-              )
-              ],
+                  SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      ContainerInScrollWidget(image:Images.home1Image, text: 'Cabin in Dorset',),
+                      SizedBox(
+                        width: 15.0,
+                      ),
+                      ContainerInScrollWidget(image: Images.home2Image, text:'Modern family',),
+                      SizedBox(
+                        width: 15.0,
+                      ),
+                      ContainerInScrollWidget(image:Images.home3Image, text: 'Nasr City',),
+                      SizedBox(
+                        width: 15.0,
+                      ),
+                      ContainerInScrollWidget(image: Images.home4Image, text: 'Zaied',),
+                      SizedBox(
+                        width: 15.0,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 20.0),
+                        child: ContainerInScrollWidget(image: Images.home5Image, text: 'New Cairo',),
+                      ),
+                    ],
+                  ),
+                ),
+                  SizedBox(
+                    height: 25.0,
+                  ),
+                  TextWidget(text: 'Nearby Hotel', textStyle: TextStyle(
+                    fontSize: 15.0,
+                  )),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  ContainerInBodyWidget(image: Images.home4Image),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  ContainerInBodyWidget(image: Images.home3Image),
+
+
+                ],
+              ),
             ),
           ),
         ));
   }
+
+
+
+
 }

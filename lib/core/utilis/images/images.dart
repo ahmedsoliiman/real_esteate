@@ -22,6 +22,19 @@ class Images
   static const String bellImage ='assets/images/bellImage.png';
   static const String searchImage ='assets/images/searchImage.png';
   static const String filterImage ='assets/images/filterImage.png';
+  static const String home1Image ='assets/images/house1Image.jpg';
+  static const String home2Image ='assets/images/home2Image.jpg';
+  static const String home3Image ='assets/images/home3Image.JPG';
+  static const String home4Image ='assets/images/home4Image.jpg';
+  static const String home5Image ='assets/images/house5Image.jpg';
+  static const String miniStarImage ='assets/images/ministar.png';
+  static const String homeInContainerImage ='assets/images/homeInContainer.png';
+  static const String miniLocationImage ='assets/images/miniLocationImage.png';
+
+
+
+
+
 
 
 

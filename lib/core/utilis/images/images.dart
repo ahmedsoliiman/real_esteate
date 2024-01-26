@@ -30,6 +30,10 @@ class Images
   static const String miniStarImage ='assets/images/ministar.png';
   static const String homeInContainerImage ='assets/images/homeInContainer.png';
   static const String miniLocationImage ='assets/images/miniLocationImage.png';
+  static const String blackButtonImage ='assets/images/blackBackButton.png';
+  static const String dollarSignImage ='assets/images/dollarSignImage.png';
+
+
 
 
 

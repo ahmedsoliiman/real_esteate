@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sr_company_project/core/utilis/shared_widgets/text_widget.dart';
 
-import '../../../../core/utilis/images/images.dart';
+import '../../../../../core/utilis/images/images.dart';
 
 class ContainerInScrollWidget extends StatelessWidget {
   final String text;

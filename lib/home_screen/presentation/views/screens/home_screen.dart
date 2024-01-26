@@ -1,11 +1,14 @@
-
 import 'package:flutter/material.dart';
 import 'package:sr_company_project/core/utilis/images/images.dart';
 import 'package:sr_company_project/core/utilis/shared_widgets/text_widget.dart';
-import 'package:sr_company_project/home_screen/presentation/views/widgets/container_in_body_widget.dart';
-import 'package:sr_company_project/home_screen/presentation/views/widgets/container_in_scroll_widget.dart';
+import 'package:sr_company_project/home_screen/presentation/views/widgets/home_screen_widgets/container_in_column_scroll_item.dart';
+import 'package:sr_company_project/home_screen/presentation/views/widgets/home_screen_widgets/row_scroll_widget.dart';
+import 'package:sr_company_project/home_screen/presentation/views/widgets/home_screen_widgets/top_title_widget.dart';
+import 'package:sr_company_project/item_screen/presentation/views/screen/item_screen.dart';
+
 
 class HomeScreen extends StatelessWidget {
+
 
   @override
   Widget build(BuildContext context) {
@@ -50,11 +53,6 @@ class HomeScreen extends StatelessWidget {
                         padding: const EdgeInsets.only(right: 4.0),
                         child: Image.asset(Images.bellImage),
                       ),
-
-
-
-
-
                     ],
                   ),
                   SizedBox(
@@ -100,42 +98,11 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.only(top: 25.0),
-                    child: TextWidget(text: 'Nearby for you', textStyle: TextStyle(
-                      fontSize: 15.0,
-                    )),
-                  ),
+                  TopTitleWidget(),
                   SizedBox(
                   height: 15.0,
                 ),
-                  SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: [
-                      ContainerInScrollWidget(image:Images.home1Image, text: 'Cabin in Dorset',),
-                      SizedBox(
-                        width: 15.0,
-                      ),
-                      ContainerInScrollWidget(image: Images.home2Image, text:'Modern family',),
-                      SizedBox(
-                        width: 15.0,
-                      ),
-                      ContainerInScrollWidget(image:Images.home3Image, text: 'Nasr City',),
-                      SizedBox(
-                        width: 15.0,
-                      ),
-                      ContainerInScrollWidget(image: Images.home4Image, text: 'Zaied',),
-                      SizedBox(
-                        width: 15.0,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 20.0),
-                        child: ContainerInScrollWidget(image: Images.home5Image, text: 'New Cairo',),
-                      ),
-                    ],
-                  ),
-                ),
+                  RowScrollWidget(),
                   SizedBox(
                     height: 25.0,
                   ),
@@ -145,13 +112,19 @@ class HomeScreen extends StatelessWidget {
                   SizedBox(
                     height: 15.0,
                   ),
-                  ContainerInBodyWidget(image: Images.home4Image),
+                  InkWell(
+                      onTap: ()
+                      {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ItemScreen()),
+                        );
+                      },
+                      child: ContainerInBodyWidget(image: Images.home4Image)),
                   SizedBox(
                     height: 15.0,
                   ),
                   ContainerInBodyWidget(image: Images.home3Image),
-
-
                 ],
               ),
             ),

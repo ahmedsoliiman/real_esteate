@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sr_company_project/core/utilis/images/images.dart';
 import 'package:sr_company_project/core/utilis/shared_widgets/text_widget.dart';
+import '../../../../home_screen/presentation/views/screens/home_screen.dart';
 
 
 class ItemScreen extends StatelessWidget {
@@ -79,14 +80,19 @@ class ItemScreen extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 35.0 , right: 20 , left: 20.0),
                         child: Row(
                           children: [
-                            Container(
-                              height: 38,
-                              width: 38,
-                              decoration: BoxDecoration(
-                                color: Color.fromRGBO(5, 5, 5, 0.3),
-                                borderRadius: BorderRadius.circular(19),
+                            MaterialButton(
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                              child: Container(
+                                height: 38,
+                                width: 38,
+                                decoration: BoxDecoration(
+                                  color: Color.fromRGBO(5, 5, 5, 0.3),
+                                  borderRadius: BorderRadius.circular(19),
+                                ),
+                                child: Icon(Icons.arrow_back, color: Colors.white,),
                               ),
-                              child: Icon(Icons.arrow_back, color: Colors.white,),
                             ),
                             Spacer(),
                             Container(
@@ -238,14 +244,9 @@ class ItemScreen extends StatelessWidget {
                         fontSize: 10.0,
                         color: Color.fromRGBO(156, 156, 156, 1.0),
                       ),),
-
-
-
-
                   ],
                 ),
               ),
-
             ],
           ),
         ),

@@ -13,16 +13,16 @@ class ButtonWidget extends StatelessWidget {
       child: Center(
         child: TextWidget(text: text, textStyle: TextStyle(
           color: Colors.white,
-          fontSize: 20.0,
+          fontSize: 10.0,
           fontWeight: FontWeight.bold,
         )),
       ),
       decoration: BoxDecoration(
         color: Color.fromRGBO(31, 65, 187, 1.0),
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(3),
       ),
-      height: 50,
-      width: 357,
+      height: 27,
+      width: 65,
     );
   }
 }

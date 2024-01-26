@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sr_company_project/core/utilis/images/images.dart';
 import 'package:sr_company_project/home_screen/presentation/views/widgets/container_in_column_scroll_widgets/second_row_in_column_in_container.dart';
-
-import '../../../../../core/utilis/shared_widgets/text_widget.dart';
 import 'first_row_in_column_in_container.dart';
 
 class ColumnInContainer extends StatelessWidget {
@@ -19,6 +16,5 @@ class ColumnInContainer extends StatelessWidget {
         SecondRowInColumnInContainer(),
       ],
     );
-
   }
 }

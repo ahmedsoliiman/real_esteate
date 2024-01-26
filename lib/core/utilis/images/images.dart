@@ -32,6 +32,15 @@ class Images
   static const String miniLocationImage ='assets/images/miniLocationImage.png';
   static const String blackButtonImage ='assets/images/blackBackButton.png';
   static const String dollarSignImage ='assets/images/dollarSignImage.png';
+  static const String houseImageInFilterScreen ='assets/images/houseImage.png';
+  static const String villasImage ='assets/images/villas.png';
+  static const String appartmentImageInFilterScreen ='assets/images/apartmentImage.png';
+  static const String finishedApartmentImage ='assets/images/Furnished apartment.png';
+  static const String shopImage ='assets/images/shop.png';
+
+
+
+
 
 
 

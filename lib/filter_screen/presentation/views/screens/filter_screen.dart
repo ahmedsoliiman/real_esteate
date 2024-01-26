@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:sr_company_project/core/utilis/images/images.dart';
 import 'package:sr_company_project/core/utilis/shared_widgets/text_widget.dart';
-import 'package:sr_company_project/core/utilis/shared_widgets/textformfield_widget.dart';
+import 'package:sr_company_project/filter_screen/presentation/views/widgets/mini_containers_widgets.dart';
+
+import '../widgets/container_widget.dart';
 
 class FilterScreen extends StatelessWidget {
 
@@ -188,6 +190,92 @@ class FilterScreen extends StatelessWidget {
                   fontSize: 15.0,
                   color: Color.fromRGBO(153, 153, 153, 1.0),
                 )),
+                SizedBox(
+                  height: 15.0,
+                ),
+                MiniContainersForFiltersWidget(),
+                SizedBox(
+                  height: 20.0,),
+                TextWidget(text: 'Beds', textStyle: TextStyle(
+                  fontSize: 15.0,
+                  color: Color.fromRGBO(153, 153, 153, 1.0),
+                )),
+                SizedBox(
+                  height: 15.0,
+                ),
+                MiniContainersForFiltersWidget(),
+                SizedBox(
+                  height: 20.0,
+                ),
+                TextWidget(text: 'Bathrooms', textStyle: TextStyle(
+                  fontSize: 15.0,
+                  color: Color.fromRGBO(153, 153, 153, 1.0),
+                )),
+                SizedBox(
+                  height: 15.0,
+                ),
+                MiniContainersForFiltersWidget(),
+                SizedBox(height: 30.0,),
+                Container(
+                  width: double.infinity,
+                  height: 0.5,
+                  color: Color.fromRGBO(131, 141, 177, 1.0),
+
+
+                ),
+                SizedBox(height: 30.0,),
+                TextWidget(text: 'Property type', textStyle: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                )),
+                SizedBox(height: 20.0,),
+                Row(
+                  children: [
+                    ContainerWidgetInFilterScreen(image: Images.houseImageInFilterScreen, text: 'House', height: 104,),
+                    SizedBox(
+                      width: 8,
+                    ),
+                    ContainerWidgetInFilterScreen(image: Images.appartmentImageInFilterScreen, text: 'Apartment', height: 104, ),
+                    SizedBox(
+                      width: 8,
+                    ),
+                    ContainerWidgetInFilterScreen(image: Images.villasImage, text: 'Villas', height: 104,),
+
+                  ],
+                ),
+                SizedBox(height: 8.0,),
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5.0),
+
+                    border: Border.all( color: Color.fromRGBO(227, 227, 227, 1.0),
+                    ),
+                  ),
+                  width: double.infinity,
+                  height: 107,
+                  child: Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Image.asset(Images.finishedApartmentImage),
+                        SizedBox(
+                          height: 25,
+                        ),
+                        TextWidget(text: 'Furnished apartment', textStyle: TextStyle(
+                          fontSize: 16.0,
+                        )),
+
+
+                      ],
+                    ),
+                  ),
+                ),
+
+
+
+
+
 
 
 

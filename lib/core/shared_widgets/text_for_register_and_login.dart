@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sr_company_project/core/utilis/shared_widgets/text_widget.dart';
+import 'package:sr_company_project/core/shared_widgets/text_widget.dart';
 
 class TextForRegisterAndLoginScreen extends StatelessWidget {
   final String text1;

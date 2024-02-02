@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/utilis/shared_widgets/textformfield_widget.dart';
+import '../../../../core/shared_widgets/textformfield_widget.dart';
 
 class TextFormFieldWidgets extends StatelessWidget {
 

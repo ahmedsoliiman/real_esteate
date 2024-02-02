@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sr_company_project/core/utilis/shared_widgets/text_widget.dart';
-import 'package:sr_company_project/splash_screen/presentation/views/widgets/splashScreen1Widgets/texts_widget.dart';
-
-import '../../../../core/utilis/shared_widgets/background_for_splash_screen.dart';
+import '../../../../core/shared_widgets/background_for_splash_screen.dart';
+import '../../../../core/shared_widgets/text_widget.dart';
 import '../../../../create_account_screen/presentation/views/screens/create_account_screen.dart';
 import '../../../../login_screen/presentation/views/screens/login_screen.dart';
 

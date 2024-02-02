@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../core/utilis/shared_widgets/text_widget.dart';
+import '../../../../../core/shared_widgets/text_widget.dart';
 import '../../screens/splash_screen2.dart';
 
 class SplashButtonWidget extends StatelessWidget {

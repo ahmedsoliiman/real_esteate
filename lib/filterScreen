@@ -46,7 +46,7 @@ class FilterScreen extends StatelessWidget {
                         SizedBox(
                           width: 10.0,
                         ),
-                        TextWidget(text: 'Enter the name for compound', textStyle: TextStyle(
+                        TextWidget(text: 'Search for compounds', textStyle: TextStyle(
                           fontSize: 10.0,
                           color: Color.fromRGBO(131, 141, 177, 1.0),
                         )),
@@ -585,7 +585,3 @@ class FilterScreen extends StatelessWidget {
     );
   }
 }
-
-
-
-

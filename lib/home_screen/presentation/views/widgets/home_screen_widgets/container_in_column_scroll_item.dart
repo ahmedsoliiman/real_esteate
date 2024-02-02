@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sr_company_project/core/utilis/shared_widgets/text_widget.dart';
-import '../../../../../core/utilis/shared_widgets/button_widget.dart';
+import '../../../../../core/shared_widgets/button_widget.dart';
+import '../../../../../core/shared_widgets/text_widget.dart';
 import '../container_in_column_scroll_widgets/column_in_container.dart';
 import '../container_in_column_scroll_widgets/first_row_in_container.dart';
 

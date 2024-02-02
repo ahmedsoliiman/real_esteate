@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import '../../../../core/utilis/shared_widgets/button_widget.dart';
-import '../../../../core/utilis/shared_widgets/mini_conainers_widget.dart';
-import '../../../../core/utilis/shared_widgets/text_for_register_and_login.dart';
-import '../../../../core/utilis/shared_widgets/text_widget.dart';
-import '../../../../core/utilis/shared_widgets/textformfield_widget.dart';
-import '../../../../core/utilis/shared_widgets/title_for_register_and_login.dart';
+
+import '../../../../core/shared_widgets/button_widget.dart';
+import '../../../../core/shared_widgets/mini_conainers_widget.dart';
+import '../../../../core/shared_widgets/text_for_register_and_login.dart';
+import '../../../../core/shared_widgets/text_widget.dart';
+import '../../../../core/shared_widgets/textformfield_widget.dart';
+import '../../../../core/shared_widgets/title_for_register_and_login.dart';
 import '../../../../otp_verification_for_login_screen/presentation/views/screens/otp_verification_for_login_screen.dart';
 
 class ForgotPasswordScreen extends StatelessWidget {

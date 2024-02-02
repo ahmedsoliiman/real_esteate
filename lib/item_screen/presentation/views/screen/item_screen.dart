@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sr_company_project/core/utilis/images/images.dart';
-import 'package:sr_company_project/core/utilis/shared_widgets/text_widget.dart';
-import '../../../../home_screen/presentation/views/screens/home_screen.dart';
+
+import '../../../../core/shared_widgets/text_widget.dart';
 
 
 class ItemScreen extends StatelessWidget {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/utilis/shared_widgets/mini_container.dart';
+import '../../../../core/shared_widgets/mini_container.dart';
+
 
 class BlackContainerWidget extends StatelessWidget {
 

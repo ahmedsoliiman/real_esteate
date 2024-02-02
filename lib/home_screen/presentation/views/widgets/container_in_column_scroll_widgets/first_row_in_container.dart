@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../core/shared_widgets/text_widget.dart';
 import '../../../../../core/utilis/images/images.dart';
-import '../../../../../core/utilis/shared_widgets/text_widget.dart';
 
 class FirstRowInContainer extends StatelessWidget {
 

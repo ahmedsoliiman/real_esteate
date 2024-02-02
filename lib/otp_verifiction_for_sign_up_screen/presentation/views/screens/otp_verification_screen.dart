@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import '../../../../core/utilis/shared_widgets/back_button_for_otp_widget.dart';
-import '../../../../core/utilis/shared_widgets/bottom_texts_for_otp_widget.dart';
-import '../../../../core/utilis/shared_widgets/textFormField_for_Otp_widgets.dart';
-import '../../../../core/utilis/shared_widgets/text_for_otp_widget.dart';
-import '../../../../core/utilis/shared_widgets/title_for_otp_widget.dart';
-import '../../../../core/utilis/shared_widgets/verify_button_widget.dart';
+
+import '../../../../core/shared_widgets/back_button_for_otp_widget.dart';
+import '../../../../core/shared_widgets/bottom_texts_for_otp_widget.dart';
+import '../../../../core/shared_widgets/textFormField_for_Otp_widgets.dart';
+import '../../../../core/shared_widgets/text_for_otp_widget.dart';
+import '../../../../core/shared_widgets/title_for_otp_widget.dart';
+import '../../../../core/shared_widgets/verify_button_widget.dart';
+
 class OtpVerificationScreen extends StatelessWidget {
 
   @override

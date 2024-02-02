@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:sr_company_project/core/utilis/shared_widgets/button_widget.dart';
-import 'package:sr_company_project/core/utilis/shared_widgets/text_widget.dart';
-import '../../../../core/utilis/shared_widgets/mini_conainers_widget.dart';
-import '../../../../core/utilis/shared_widgets/text_for_register_and_login.dart';
-import '../../../../core/utilis/shared_widgets/textformfield_widget.dart';
-import '../../../../core/utilis/shared_widgets/title_for_register_and_login.dart';
+
+import '../../../../core/shared_widgets/button_widget.dart';
+import '../../../../core/shared_widgets/mini_conainers_widget.dart';
+import '../../../../core/shared_widgets/text_for_register_and_login.dart';
+import '../../../../core/shared_widgets/text_widget.dart';
+import '../../../../core/shared_widgets/textformfield_widget.dart';
+import '../../../../core/shared_widgets/title_for_register_and_login.dart';
 import '../../../../forgot_your_password_screen/presentation/views/screens/forgot_password_screen.dart';
 
 class LoginScreen extends StatelessWidget {

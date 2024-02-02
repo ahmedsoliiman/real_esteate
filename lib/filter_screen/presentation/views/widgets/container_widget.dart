@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sr_company_project/core/utilis/shared_widgets/text_widget.dart';
+
+import '../../../../core/shared_widgets/text_widget.dart';
 
 class ContainerWidgetInFilterScreen extends StatelessWidget {
   final String image;

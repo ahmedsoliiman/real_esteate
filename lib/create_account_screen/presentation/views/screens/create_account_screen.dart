@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../../../core/utilis/shared_widgets/mini_conainers_widget.dart';
-import '../../../../core/utilis/shared_widgets/text_for_register_and_login.dart';
-import '../../../../core/utilis/shared_widgets/title_for_register_and_login.dart';
+import '../../../../core/shared_widgets/mini_conainers_widget.dart';
+import '../../../../core/shared_widgets/text_for_register_and_login.dart';
+import '../../../../core/shared_widgets/title_for_register_and_login.dart';
 import '../widgets/button_widget.dart';
 import '../widgets/textFormField_widgets.dart';
 import '../widgets/text_under_button.dart';

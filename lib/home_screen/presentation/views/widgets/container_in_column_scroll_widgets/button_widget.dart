@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utilis/shared_widgets/text_widget.dart';
+import '../../../../../core/shared_widgets/text_widget.dart';
+
 
 class ButtonWidget extends StatelessWidget {
   const ButtonWidget({super.key});

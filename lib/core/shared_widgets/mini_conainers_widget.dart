@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../utilis/images/images.dart';
 import 'icon_in_container_widget.dart';
-import '../images/images.dart';
 
 class MiniContainersWidget extends StatelessWidget {
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sr_company_project/core/utilis/shared_widgets/mini_container.dart';
+
+import '../../../../core/shared_widgets/mini_container.dart';
 
 class WhiteContainerWidget extends StatelessWidget {
   final String text;

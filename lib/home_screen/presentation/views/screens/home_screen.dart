@@ -4,7 +4,6 @@ import 'package:sr_company_project/home_screen/presentation/views/widgets/home_s
 import 'package:sr_company_project/home_screen/presentation/views/widgets/home_screen_widgets/row_scroll_widget.dart';
 import 'package:sr_company_project/home_screen/presentation/views/widgets/home_screen_widgets/top_title_widget.dart';
 import 'package:sr_company_project/item_screen/presentation/views/screen/item_screen.dart';
-
 import '../../../../core/shared_widgets/text_widget.dart';
 
 
@@ -25,10 +24,8 @@ class HomeScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   TextWidget(text: 'Location', textStyle: TextStyle(
-
                     fontSize: 12.0,
                     color: Color.fromRGBO(201, 213, 255, 0.5),
-
                   )),
                   SizedBox(
                     height: 5.0,
@@ -60,35 +57,30 @@ class HomeScreen extends StatelessWidget {
                     height: 25.0,
                   ),
                   Container(
-                    height: 44.0,
-                    width: 335.0,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(5.0),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.only(right: 15.5 , left: 12.0),
-                      child: Row(
-                        children: [
-                          Image.asset(Images.searchImage),
-                          SizedBox(
-                            width: 10.0,
-                          ),
-                          TextWidget(text: 'Search', textStyle: TextStyle(
-                            fontSize: 12.0,
-                            color: Color.fromRGBO(131, 141, 177, 1.0),
-                          )),
-                          Spacer(),
-                          Image.asset(Images.filterImage),
-
-
-
-                        ],
+                height: 44.0,
+                width: 335.0,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(5.0),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 15.5 , left: 12.0),
+                  child: Row(
+                    children: [
+                      Image.asset(Images.searchImage),
+                      SizedBox(
+                        width: 10.0,
                       ),
-                    ),
+                      TextWidget(text: 'Search', textStyle: TextStyle(
+                        fontSize: 12.0,
+                        color: Color.fromRGBO(131, 141, 177, 1.0),
+                      )),
+                      Spacer(),
+                      Image.asset(Images.filterImage),
+                    ],
                   ),
-
-
+                ),
+              ),
                 ],
               ),
             ),

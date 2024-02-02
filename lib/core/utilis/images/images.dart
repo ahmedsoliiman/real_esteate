@@ -37,6 +37,8 @@ class Images
   static const String appartmentImageInFilterScreen ='assets/images/apartmentImage.png';
   static const String finishedApartmentImage ='assets/images/Furnished apartment.png';
   static const String shopImage ='assets/images/shop.png';
+  static const String chat1Image ='assets/images/chat1.png';
+
 
 
 

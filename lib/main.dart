@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sr_company_project/splash_screen/presentation/views/screens/splash_screen1.dart';
 
+import 'chat_screens/presentation/views/screens/chat_content.dart';
+import 'chat_screens/presentation/views/screens/chats_screen.dart';
 import 'create_account_screen/presentation/views/screens/create_account_screen.dart';
 import 'filter_screen/presentation/views/screens/filter_screen.dart';
 import 'home_screen/presentation/views/screens/home_screen.dart';
@@ -19,11 +21,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      // theme: ThemeData(
-      //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      //   useMaterial3: true,
-      // ),
-      home: FilterScreen(),
+
+      home: ChatContent(),
     );
   }
 }

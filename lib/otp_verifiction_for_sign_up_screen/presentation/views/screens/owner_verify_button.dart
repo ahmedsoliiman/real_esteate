@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:sr_company_project/core/shared_widgets/text_widget.dart';
+import 'package:sr_company_project/main_home_screen/presentation/views/screens/owner_main_screen.dart';
 
-import '../../home_screen/presentation/views/screens/home_screen.dart';
-import '../../main_home_screen/presentation/views/screens/main_home_screen.dart';
 
-class VerifyButtonWidget  extends StatelessWidget {
+class OwnerVerifyButtonWidget  extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +12,7 @@ class VerifyButtonWidget  extends StatelessWidget {
       {
         Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => MainHomeScreen()));
+            MaterialPageRoute(builder: (context) => OwnerMainHomeScreen()));
       },
       child: Container(
         child: Center(child: TextWidget(text: 'Verify', textStyle: TextStyle(

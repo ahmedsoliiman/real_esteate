@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../choose/user_or_owner.dart';
 import '../../../../core/shared_widgets/background_for_splash_screen.dart';
 import '../../../../core/shared_widgets/text_widget.dart';
 import '../../../../create_account_screen/presentation/views/screens/create_account_screen.dart';
@@ -80,7 +81,7 @@ class SplashScreen2 extends StatelessWidget {
                           {
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => CreateAccountScreen()),
+                              MaterialPageRoute(builder: (context) => UserOrOwner()),
                             );
 
                           },

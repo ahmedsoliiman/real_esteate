@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sr_company_project/chat_screens/presentation/views/screens/chat_content.dart';
 import 'package:sr_company_project/core/utilis/images/images.dart';
 
 import '../../../../core/shared_widgets/text_widget.dart';
@@ -25,13 +26,21 @@ class ItemScreen extends StatelessWidget {
                     child: Row(
                       children: [
                         Expanded(
-                          child: Container(
-                            child: Center(child: TextWidget(text: 'Book now', textStyle: TextStyle(fontSize: 13.0 , color: Colors.white))),
-                            height:41.0 ,
-                            width: 107,
-                            decoration: BoxDecoration(
-                              color: Color.fromRGBO(51, 86, 210, 1.0),
-                              borderRadius: BorderRadius.circular(6.0),
+                          child: MaterialButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => ChatContent()),
+                              );
+                            },
+                            child: Container(
+                              child: Center(child: TextWidget(text: 'Chat', textStyle: TextStyle(fontSize: 13.0 , color: Colors.white))),
+                              height:41.0 ,
+                              width: 107,
+                              decoration: BoxDecoration(
+                                color: Color.fromRGBO(51, 86, 210, 1.0),
+                                borderRadius: BorderRadius.circular(6.0),
+                              ),
                             ),
                           ),
                         ),

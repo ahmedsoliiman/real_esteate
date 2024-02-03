@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sr_company_project/core/shared_widgets/text_widget.dart';
+import 'package:sr_company_project/main_home_screen/presentation/views/screens/owner_main_screen.dart';
 
 import '../../../../core/utilis/images/images.dart';
 
@@ -64,7 +65,13 @@ class SecondStep extends StatelessWidget {
               ),
               Spacer(),
               InkWell(
-                onTap: (){},
+                onTap: ()
+                {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => OwnerMainHomeScreen()));
+
+                },
                 child: Center(
                   child: Container(
                     child: Center(

@@ -39,6 +39,9 @@ class Images
   static const String shopImage ='assets/images/shop.png';
   static const String chat1Image ='assets/images/chat1.png';
   static const String secondStepImage ='assets/images/secondStpImage.png';
+  static const String scanImage ='assets/images/scanImage.png';
+
+
 
 
 

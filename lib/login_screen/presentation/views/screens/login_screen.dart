@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sr_company_project/main_home_screen/presentation/views/screens/main_home_screen.dart';
 
 import '../../../../core/shared_widgets/button_widget.dart';
 import '../../../../core/shared_widgets/mini_conainers_widget.dart';
@@ -75,7 +76,15 @@ class LoginScreen extends StatelessWidget {
                 SizedBox(
                   height: 30.0,
                 ),
-                ButtonWidget(text: 'Sign in'),
+                InkWell(
+                    onTap: ()
+                    {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MainHomeScreen()),
+                      );
+                    },
+                    child: ButtonWidget(text: 'Sign in')),
                 SizedBox(
                   height: 40.0,
                 ),

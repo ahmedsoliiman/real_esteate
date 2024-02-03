@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sr_company_project/core/utilis/images/images.dart';
 import 'package:sr_company_project/filter_screen/presentation/views/widgets/mini_containers_widgets.dart';
+import 'package:sr_company_project/post_screens/presentation/views/screens/second_step.dart';
 import '../../../../core/shared_widgets/text_widget.dart';
 import '../../../../filter_screen/presentation/views/widgets/container_widget.dart';
 
@@ -639,6 +640,10 @@ class FirstStep extends StatelessWidget {
                     InkWell(
                       onTap: ()
                       {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => SecondStep()));
+
 
                       },
                       child: Expanded(

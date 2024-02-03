@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sr_company_project/chat_screens/presentation/views/screens/chats_screen.dart';
-
 import '../../../../core/shared_widgets/text_widget.dart';
 import '../../../../core/utilis/images/images.dart';
 

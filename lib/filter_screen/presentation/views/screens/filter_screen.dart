@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sr_company_project/core/utilis/images/images.dart';
 import 'package:sr_company_project/filter_screen/presentation/views/widgets/mini_containers_widgets.dart';
+import 'package:sr_company_project/main_home_screen/presentation/views/screens/main_home_screen.dart';
 import '../../../../core/shared_widgets/text_widget.dart';
 import '../widgets/container_widget.dart';
 
@@ -560,18 +561,27 @@ class FilterScreen extends StatelessWidget {
                       fontSize: 18.0,
                     )),
                     Spacer(),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(43, 43, 43, 1.0),
-                        borderRadius: BorderRadius.circular(6.0),
-                      ),
-                      height: 41.0,
-                      width :127 ,
-                      child: Center(
-                        child: TextWidget(text: 'Show results', textStyle: TextStyle(
-                          fontSize: 15.0,
-                          color: Colors.white,
-                        )),
+                    InkWell(
+                      onTap: ()
+                      {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MainHomeScreen()),
+                        );
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(43, 43, 43, 1.0),
+                          borderRadius: BorderRadius.circular(6.0),
+                        ),
+                        height: 41.0,
+                        width :127 ,
+                        child: Center(
+                          child: TextWidget(text: 'Show results', textStyle: TextStyle(
+                            fontSize: 15.0,
+                            color: Colors.white,
+                          )),
+                        ),
                       ),
                     ),
                   ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sr_company_project/core/utilis/images/images.dart';
+import 'package:sr_company_project/filter_screen/presentation/views/screens/filter_screen.dart';
 import 'package:sr_company_project/home_screen/presentation/views/widgets/home_screen_widgets/container_in_column_scroll_item.dart';
 import 'package:sr_company_project/home_screen/presentation/views/widgets/home_screen_widgets/row_scroll_widget.dart';
 import 'package:sr_company_project/home_screen/presentation/views/widgets/home_screen_widgets/top_title_widget.dart';
@@ -54,7 +55,7 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                   SizedBox(
-                    height: 25.0,
+                    height: 35.0,
                   ),
                   Container(
                 height: 44.0,
@@ -76,7 +77,15 @@ class HomeScreen extends StatelessWidget {
                         color: Color.fromRGBO(131, 141, 177, 1.0),
                       )),
                       Spacer(),
-                      Image.asset(Images.filterImage),
+                      InkWell(
+                          onTap: ()
+                          {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => FilterScreen()),
+                            );
+                          },
+                          child: Image.asset(Images.filterImage)),
                     ],
                   ),
                 ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sr_company_project/splash_screen/presentation/views/screens/splash_screen1.dart';
+import 'package:sr_company_project/profile/presentation/views/screens/profile_screen.dart';
 
 import 'chat_screens/presentation/views/screens/chat_content.dart';
 import 'chat_screens/presentation/views/screens/chats_screen.dart';
@@ -21,8 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-
-      home: ChatContent(),
+      home: ProfileScreen(),
     );
   }
 }

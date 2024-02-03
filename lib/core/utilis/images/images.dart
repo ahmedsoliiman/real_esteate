@@ -38,6 +38,8 @@ class Images
   static const String finishedApartmentImage ='assets/images/Furnished apartment.png';
   static const String shopImage ='assets/images/shop.png';
   static const String chat1Image ='assets/images/chat1.png';
+  static const String secondStepImage ='assets/images/secondStpImage.png';
+
 
 
 
